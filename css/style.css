@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+/*-------------------------
+  初期値
+-------------------------*/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+  color: #333;
+  font-size: 1.6rem;
+  line-height: 2;
+  font-feature-settings: "palt" 1;
+  text-size-adjust: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  letter-spacing: 0.15em;
+}
+
+a:link {
+  font-weight: bold;
+}
+
+:hover {
+  transition: 0.4s ease-in;
+}
+
+a:hover {
+  color: #933;
+}
+
+em {
+  font-style: normal;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*-------------------------
+グローバル
+-------------------------*/
+
+.container{
+  max-width: 1100px;
+  margin: auto;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 94%;
+  }
+}
+
+.gl-header  {
+  height: 82px;
+  background: #343a40;
+  color:#d4d3d3;
+}
+
+@media screen and (max-width: 480px) {
+  .gl-header  {
+  padding-top: 10px;
+  }
+  }
+
+
+.gl-header  .container{
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .gl-header  .container{
+    display: block;
+  }
+  }
+
+
+.logo a{
+  background:  url("../images/logo.jpg") 0 0  no-repeat;
+  width: 154px;
+  height: 25px;
+  text-indent: -9999px;
+  display: block;
+  margin: 30px;
+}
+
+@media screen and (max-width: 480px) {
+.logo a{
+
+  margin: auto;
+}
+  }
+
+@media screen and (max-width: 480px) {
+    .gl-header ul{
+        padding-left:40px;
+        margin: auto;
+    }
+  }
+
+
+
+.gl-nav li{
+  float: left;
+  margin-left: 42px;
+  margin-top: 35px;
+  height: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .gl-nav li{
+    margin-top: 5px;
+  }
+  }
+
+
+.gl-nav li:last-of-type{
+margin-left: 20px;
+}
+
+.gl-nav a{
+  color:#d4d3d3 ;
+}
+
+.gl-footer{
+  height: 176px;
+  background: #343a40;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .gl-footer{
+    background: #343a40;
+    padding-top: 25px;
+    margin: auto;
+  }
+  }
+
+
+.gl-footer small{
+  color: #6c757d;
+}
+
+.gl-footer a{
+  color: #e85000;
+}
+
+
+/*-------------------------
+  top
+
+-------------------------*/
+
+.top-hero {
+  background:  url("../images/mainimg.jpg");
+  background-size: cover;
+  height: 400px;
+  text-indent: -9999px;
+  margin-bottom: 40px;
+ 
+}
+
+@media screen and (max-width: 480px) {
+  .top-hero {
+    background:  url("../images/main_sp.jpg");
+    background-size: 100%;
+    height: 560px;
+   
+  }
+  }
+
+
+.top-main section {
+  float: left;
+  width: 350px;
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 480px) {
+    .top-main section {
+      float: none;
+      width: 350px;
+      margin:auto;
+    }
+  }
+
+
+.top-main section:nth-of-type(1){
+margin-left: auto;
+}
+
+.top-topics ul h2{
+display: block;
+font-size: 31px;
+margin-bottom: 20px;
+color: #e85000;
+margin-top: 10px;
+}
+
+
+
+.top-topics p{
+  margin-left: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.top-topics img{
+  margin-left: 65px;
+  height: 210px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .top-main section:nth-of-type(2),.top-main section:last-of-type{
+    margin-top: 40px;
+    }
+  }
+
+.top-topics a{
+ padding: 10px;
+ width: 60px;
+ height: 40px;
+ line-height: 1.2;
+ font-size: 18px;
+}
+
+.top-topics  li a:nth-of-type(1){
+  border: 1px ;
+  background: #e85000 ;
+  margin-right: 8px;
+  border-radius:0 3px 0 0;
+  color:white;
+}
+
+.top-topics  li a:nth-of-type(2){
+  border: 1px ;
+  background: #ffc108 ;
+  border-radius:0 3px 0 0;
+  color: #333;
+}
+
+.top-banner ul{
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .top-banner ul{
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  }
+
+
+.top-banner li{
+width: 255px;
+height: 133px;
+margin-right: 27px;
+}
+
+@media screen and (max-width: 480px) {
+  .top-banner li{
+    width: 255px;
+    height: 133px;
+    margin: auto;
+    margin-bottom: 20px;
+    }
+  }
+
+
+.top-banner li:last-child{
+  margin-right: auto;
+  }
